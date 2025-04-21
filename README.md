@@ -23,3 +23,11 @@
     ```bash
     streamlit run streamlit_app.py
     ```
+  
+# Deployment
+For cloud deployment (e.g. Streamlit Cloud or Heroku), ensure you launch the Streamlit app instead of the Pyglet demo:
+1. Add a `Procfile` at the project root with:
+   ```text
+   web: streamlit run streamlit_app.py --server.port $PORT --server.headless true
+   ```
+2. Push your repo to your cloud platform; it will run the Streamlit app as the web process.
