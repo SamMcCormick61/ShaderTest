@@ -1,28 +1,23 @@
  # Shader Demo
  
- This project demonstrates a simple GLSL shader using Pyglet and ModernGL.
+ This project demonstrates an interactive WebGL shader demo (Three.js & GLSL) embedded in a Streamlit app.
  
- # Files
- - `shadertest.py`: Runs a live Pyglet window displaying the dynamic shader.
- - `shader.png`: Static screenshot of the shader demo.
- - `streamlit_app.py`: Streamlit app to preview the shader image and launch the live demo.
- - `requirements.txt`: Project dependencies.
+# Files
+- `shad1.py`: Pygame + ModernGL (OpenGL) standalone flame shader demo.
+- `fractal.html`: HTML + Three.js shader demo used by the Streamlit app.
+- `streamlit_app.py`: Streamlit app embedding `fractal.html`.
+- `requirements.txt`: Project dependencies.
  
- # Setup
- 1. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
- 
- 2. Run the live shader demo:
-    ```bash
-    python shadertest.py
-    ```
- 
- 3. Launch the Streamlit app:
-    ```bash
-    streamlit run streamlit_app.py
-    ```
+# Setup
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Launch the Streamlit app:
+   ```bash
+   streamlit run streamlit_app.py
+   ```
   
 # Deployment
 For cloud deployment (e.g. Streamlit Cloud or Heroku), ensure you launch the Streamlit app instead of the Pyglet demo:
