@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 from pathlib import Path
 
-st.title("Interactive Shader Demo")
+st.title("Interactive Shader Demo V2")
 st.write("This Streamlit app embeds a WebGL shader demo (Three.js & GLSL).")
 
 html_file = Path(__file__).parent / "fractal.html"
