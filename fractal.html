@@ -70,7 +70,7 @@ void main() {
 // adapted from https://www.shadertoy.com/view/mtyGWy
 uniform float iTime;
 uniform vec2 iMouse;
-in vec2 fragCoord;
+varying vec2 fragCoord;
 const vec3 col1 = vec3(0.2, 0.3, 0.2);
 const vec3 col2 = vec3(0.2, 0.2, 0.5);
 const vec3 col3 = vec3(0.263, 0.416, 0.557);
@@ -78,7 +78,7 @@ const vec3 col_base = vec3(1.0, 1.0, 1.0);
 const float e = 21.28318;
 const float iterations = 4.0;
 const float speed = 0.7;
-const float uvFractalScale = 1.25;
+	const float uvFractalScale = 1.25;
 const float uvOffset = 0.5;
 const float colorMultiplier = 0.1;
 const float sinFrequency = 5.0;
